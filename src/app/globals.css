@@ -6,3 +6,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@layer components{
+  .layout{
+    @apply px-6 lg:px-24 md:px-16 xl:px-36;
+  }
+}

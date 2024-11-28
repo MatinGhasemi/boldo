@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import url from "@/production";
+import Services from "./components/services";
+import Carousel from "./components/carousel";
+import Office from "./components/office";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 export default function Home() {
+
+
   return (
     <div>
       <div className="relative">
@@ -35,6 +42,56 @@ export default function Home() {
           <div className="hidden sm:block"><Image className="w-20 lg:w-24 h-full" src={`${url}LogoWp.png`} width={100} height={40} alt="Group 263"/></div>
         </div>
       </div>
+      <div className="mt-32">
+        <p className="text-center text-sm text-lightLight">Our Services</p>
+        <p className="text-lg mt-2 mb-6 w-80 mx-auto text-center">Handshake infographic mass market crowdfunding iteration.</p>
+        <div className="space-y-5 sm:space-y-0 sm:flex sm:justify-center sm:flex-wrap sm:gap-x-10 md:gap-20 lg:gap-32 xl:gap-48 sm:gap-y-5">
+          <div className="w-52 mx-auto lg:mx-0">
+            <div><Image src={`${url}Rectangle 1270.png`} width={200} height={400} alt="png cover1"/></div>
+            <div>
+              <p>Cool Feature Title</p>
+              <p className="text-lightLight">Learning curve network effects return on investment.</p>
+              <div className="flex items-center gap-2 mt-2 border-b-2 w-fit border-darkBlue">
+                <p className="text-darkBlue cursor-pointer">Explore Page</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#0A2640" className="size-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="w-52 mx-auto lg:mx-0">
+            <div><Image src={`${url}Rectangle 1271.png`} width={200} height={400} alt="png cover2"/></div>
+            <div>
+              <p>Even Cooler Feature</p>
+              <p className="text-lightLight">Learning curve network effects return on investment.</p>
+              <div className="flex items-center gap-2 mt-2 border-b-2 w-fit border-darkBlue">
+                <p className="text-darkBlue cursor-pointer">Explore Page</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#0A2640" className="size-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="w-52 mx-auto lg:mx-0">
+            <div><Image src={`${url}Rectangle 1272.png`} width={200} height={400} alt="png cover3"/></div>
+            <div>
+              <p>Cool Feature Title</p>
+              <p className="text-lightLight">Learning curve network effects return on investment.</p>
+              <div className="flex items-center gap-2 mt-2 border-b-2 w-fit border-darkBlue">
+                <p className="text-darkBlue cursor-pointer">Explore Page</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#0A2640" className="size-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Services />
+      <Carousel />
+      <Office />
+      <Contact />
+      <Footer />
     </div>
   );
 }
